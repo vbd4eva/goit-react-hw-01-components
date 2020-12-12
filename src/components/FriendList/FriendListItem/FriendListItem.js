@@ -6,7 +6,7 @@ const FriendListItem = ({ avatar = "https://www.flaticon.com/svg/static/icons/sv
     const status = isOnline ? 'online' : 'offline';
     return (
             <li className={s.item}>
-            <span className={s.status+" "+status}>is {status}</span>
+            <span className={s.status+" "+s.[status]}>is {status}</span>
                 <img className={s.avatar} src={avatar} alt={name} width="48" />
             <p className={s.name}>{name}</p>
             </li>

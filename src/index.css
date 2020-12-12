@@ -1,9 +1,13 @@
 :root {
   --color-basic: #92a1aa;
   --color-darken: #78909c;
+  --color-red-opacity: rgba(6, 234, 17, 0.5);
+  --color-green-opacity: rgba(218, 11, 80, 0.5);
 
   --shadow-dark: 5px 5px 7px rgba(0, 0, 0, 0.25);
   --shadow-light: -5px -5px 7px rgba(255, 255, 255, 0.3);
+  --shadow-convex: 5px 5px 7px 0 rgba(255, 255, 255, 0.3) inset,
+    -3px -3px 5px 0 rgba(0, 0, 0, 0.25) inset;
 }
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 body {
@@ -14,10 +18,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
 
   background-color: var(--color-basic);
-  /* display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0; */
   padding: 1rem;
 }
 
