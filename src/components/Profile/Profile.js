@@ -1,9 +1,10 @@
 import PropTypes from 'prop-types';
 import s from "./Profile.module.css";
 
+
+
 export default function Profile({
-    avatar = 'https://www.flaticon.com/svg/static/icons/svg/3135/3135715.svg',
-    name, tag, location, stats }) { 
+    avatar, name, tag, location, stats }) { 
     return (
         <div className={s.profile}>
             <div className={s.description}>
@@ -37,6 +38,9 @@ export default function Profile({
     );
 }
 
+Profile.defaultProps = {
+    avatar: 'https://www.flaticon.com/svg/static/icons/svg/3135/3135715.svg',
+  };
 
 Profile.propTypes = {
     name: PropTypes.string,
@@ -45,3 +49,4 @@ Profile.propTypes = {
     avatar: PropTypes.string,
     sats: PropTypes.objectOf(PropTypes.number),
 }
+

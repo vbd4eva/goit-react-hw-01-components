@@ -42,14 +42,6 @@
   width: 90px;
   background-color: var(--color-basic);
 }
-.avatar {
-  /* box-shadow: inset 8px 8px 16px 0 rgba(0, 0, 0, 0.2),
-    inset -20px -20px 12px 0 rgba(255, 255, 255, 0.4);
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  padding: 10px; */
-}
 .name {
   box-shadow: var(--shadow-dark), var(--shadow-light), inset var(--shadow-dark),
     inset var(--shadow-light);
