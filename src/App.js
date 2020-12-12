@@ -1,4 +1,6 @@
 // import logo from './logo.svg';
+import Container from './components/Container/Container'
+
 import user from './data/user.json';
 import Profile from './components/Profile/';
 
@@ -14,30 +16,36 @@ import TransactionHistory from './components/TransactionHistory/';
 function App() {
   return (
     <div>
-
-      <Profile
-          name={user.name}
-          tag={user.tag}
-          location={user.location}
-          avatar={user.avatar}
-          stats={user.stats}
-      />
-      
-      <Statistics
-        stats={statistical}
-      />
-      <Statistics
-        title="Заголовок"
-        stats={statistical}
-      />
-
-      <Friends
-        friends={friends}
-      />
-
-      <TransactionHistory
-        items={transactions}
-      />
+      <Container>
+        <Profile
+            name={user.name}
+            tag={user.tag}
+            location={user.location}
+            avatar={user.avatar}
+            stats={user.stats}
+        />
+      </Container>
+      <Container>
+        <Statistics
+          stats={statistical}
+        />
+      </Container>
+      <Container>
+        <Statistics
+          title="Заголовок"
+          stats={statistical}
+        />
+      </Container>
+      <Container>
+        <Friends
+          friends={friends}
+        />        
+    </Container>
+      <Container>
+        <TransactionHistory
+          items={transactions}
+        />
+    </Container>
     </div>
   );
 }

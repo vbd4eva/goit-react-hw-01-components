@@ -7,11 +7,13 @@ export default function Profile({
     return (
         <div className={s.profile}>
             <div className={s.description}>
-                <img
-                    src={avatar}
-                    alt="Аватар пользователя"
-                    className={s.avatar}
-                />
+                <div className={s.thumb}>
+                    <img
+                        src={avatar}
+                        alt="Аватар пользователя"
+                        className={s.avatar}
+                    />
+                </div>
                 <p className={s.name}>{name}</p>
                 <p className={s.tag}>@{tag}</p>
                 <p className={s.location}>{location}</p>
